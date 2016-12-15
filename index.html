@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>WebRTC - Video call</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron" style="margin-top: 5%; margin-bottom: 5%;">
+      <div class="row" >
+      <div class="col-xs-12 col-md-7 text-center">
+        <video id="remoteVideo" width="600" style="background-color: #464545;" autoplay></video>
+        <h1>Remote</h1>
+
+      </div>
+      <div class="col-xs-12 col-md-5 text-center">
+        <h1>Local</h1>
+        <video id="localVideo" width="350" style="background-color: #464545;" autoplay muted></video>
+
+        <br><br>
+        <input class="btn btn-primary btn-lg" type="button" value="END VIdeo CALL" onclick="window.location.reload()" />
+    
+      </div>
+    </div>
+      
+    </div>
+
+    
+    
+  </div>
+
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script src="js/lib/adapter.js"></script>
+  <script src="js/webrtc.js"></script>
+
+
+</body>
+
+</html>
